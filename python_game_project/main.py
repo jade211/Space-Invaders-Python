@@ -14,6 +14,7 @@ screen = pygame.display.set_mode((800, 600))
 background = pygame.image.load("spacebackground.jpg")
 
 # Background sound
+pygame.mixer.init()
 mixer.music.load('background.wav')
 mixer.music.play(-1) # -1 means loop
 
@@ -44,8 +45,8 @@ for i in range(num_of_enemies):
     enemyIMG.append(pygame.image.load("enemy.png"))
     enemyX.append(random.randint(0, 735)) # makes sure the enemy stays on screen
     enemyY.append(random.randint(50, 150))
-    enemyX_change.append(4)  # 0.4 = setting to 0 to prepare for game movement loop
-    enemyY_change.append(30)
+    enemyX_change.append(2)  # 0.4 = setting to 0 to prepare for game movement loop
+    enemyY_change.append(10)
 
 
 
@@ -169,10 +170,10 @@ while running:
 
         enemyX[i] += enemyX_change[i]
         if enemyX[i] <= 0:
-            enemyX_change[i] = 4
+            enemyX_change[i] = 2
             enemyY[i] += enemyY_change[i]
         elif enemyX[i] >= 736:  # 800 - 64 pixels = 736(size of spaceship png)
-            enemyX_change[i] = -4
+            enemyX_change[i] = -2
             enemyY[i] += enemyY_change[i]
         
         # Collision
