@@ -20,11 +20,10 @@ The game includes background music, sound effects and a scoring system.
 
 ## 📸 Screenshots of Gameplay
 <div align="center">
-  <img src="python_game_project/gameplay_screenshot.png" alt="Gameplay" width="300"/>
+  <img src="python_game_project/gameplay_screenshot.png" alt="Gameplay" width="300" style="display:inline-block; margin: 10px;" />
+  <img src="python_game_project/game_over_screenshot.png" alt="GameOver" width="300" style="display:inline-block; margin: 10px;" />
 </div>
-<div align="center">
-  <img src="python_game_project/game_over_screenshot.png" alt="GameOver" width="300"/>
-</div>
+
 
 ---
 
